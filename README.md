@@ -5,4 +5,5 @@
 
 
 
-The MarioAI is presented by The University of Electro-Communications.
+The marioAI is presented by The University of Electro-Communications.
+----------
