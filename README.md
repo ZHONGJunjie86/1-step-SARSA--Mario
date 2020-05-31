@@ -17,11 +17,13 @@ I pepared 9 actions for agent to choose and let agent see 8 blocks around itself
 
 ![image](https://github.com/ZHONGJunjie86/1-step-SARSA--Mario/blob/master/illustrate/setting1.jpg)
 # Experiment
-This model learns very fast but unpleasant. ####It shows the agent has no sense of taking actions to 
+This model learns very fast but unpleasant. 
+#### It shows the agent has no sense of taking actions to respond to the complex environment. It has learn nothing about the environment although it just can see a little part of state.
+#### エージェントは学習し速いですが、効果的ではありません。複雑な環境を対応できないです。見える所は有限で、場所を学習していません。
 ![image](https://github.com/ZHONGJunjie86/1-step-SARSA--Mario/blob/master/illustrate/experiment.JPG)
 
 
 
-
+#Referce
 The marioAI is presented by The University of Electro-Communications.
 ----------
