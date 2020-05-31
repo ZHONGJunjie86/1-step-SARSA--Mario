@@ -25,5 +25,5 @@
 
 
 # Referce  
-The marioAI is presented by The University of Electro-Communications.
+The mario game is presented by The University of Electro-Communications.
 ----------
