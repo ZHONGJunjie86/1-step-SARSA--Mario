@@ -10,7 +10,7 @@ import ch.idsia.scenarios.Datas;
 
 public class MyLearningAgent extends BasicMarioAIAgent implements Agent
 {
-	public int STATE_NUM = 12;
+	public int STATE_NUM = 8; //12
     public int ACTION_NUM = 9;
     int local = 0;
     int local_next = 0;
@@ -18,9 +18,9 @@ public class MyLearningAgent extends BasicMarioAIAgent implements Agent
     int action_choose =0;
     int action_choose_next =0;
     int[]action_max=new int[] {0,0,0,0,0,0,0,0};
-    int[]state=new int[] {0,0,0,0,0,0,0,0,0,0,0,0};//,0,0,0
+    int[]state=new int[] {0,0,0,0,0,0,0,0};     //,0,0,0,0,0,0,0
                           //learning_rate reward_decay e_greedy
-    RL_Sarsa RL = new RL_Sarsa(0.01, 0.9, 0.85);
+    RL_Sarsa RL = new RL_Sarsa(0.01, 0.9, 0.75);
 
     public MyLearningAgent(){
         super("MyLearningAgent");
@@ -87,10 +87,10 @@ public class MyLearningAgent extends BasicMarioAIAgent implements Agent
    		  else {
    			state[6] = (getReceptiveFieldCellValue(row-2,col+3)+getEnemiesCellValue(row-2,col+3));//9,8
    		    state[7] = (getReceptiveFieldCellValue(row,col-1)+getEnemiesCellValue(row,col-1)); //7,12
-   		    state[8] = (getReceptiveFieldCellValue(7,9)+getEnemiesCellValue(7,9)); //7,9
-   		    state[9] = (getReceptiveFieldCellValue(8,12)+getEnemiesCellValue(8,12)); //8,12
-   		    state[10] = (getReceptiveFieldCellValue(7,10)+getEnemiesCellValue(7,10)); //7,10
-		    state[11] = (getReceptiveFieldCellValue(7,11)+getEnemiesCellValue(7,11)); //7,11
+   		    //state[8] = (getReceptiveFieldCellValue(9,9)+getEnemiesCellValue(9,9)); //9,9
+   		    //state[9] = (getReceptiveFieldCellValue(8,12)+getEnemiesCellValue(8,12)); //8,12
+   		    //state[10] = (getReceptiveFieldCellValue(7,10)+getEnemiesCellValue(7,10)); //7,10
+		    //state[11] = (getReceptiveFieldCellValue(7,11)+getEnemiesCellValue(7,11)); //7,11
    		    }
        }
 

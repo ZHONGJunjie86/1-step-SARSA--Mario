@@ -6,7 +6,7 @@ import ch.idsia.scenarios.Datas;
 
 public class RL_Sarsa
 {
-    public int STATE_NUM = 12;
+    public int STATE_NUM = 8; //12
     public int ACTION_NUM = 9;
 	public double lr = 0.01;
 	public double gamma = 0.9;  //奖励衰减
@@ -103,6 +103,7 @@ public class RL_Sarsa
 
         if(Datas.win!=0||Datas.die!=0) {
           Datas.GAME_now++;
+          epsilon = epsilon*(1+0.005);
           if(Datas.GAME_now==Datas.GAME_NUM-1) {
           System.out.println("Stations.size():" +Stations.size()+"Actions.size():"+Actions.size());
           /*for(int j=0;j<=10;j++) {
