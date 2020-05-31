@@ -17,8 +17,8 @@
 
 ![image](https://github.com/ZHONGJunjie86/1-step-SARSA--Mario/blob/master/illustrate/setting1.jpg)
 # Experiment
-##### 　This model learns very fast but unpleasant. Due to its simpleness, the model just makes simple judgements(inaccurate and overestimate). It shows the agent has no sense of taking actions to respond to the complex environment. It has learn nothing about the environment although it just can see a little part of state.
-##### 　エージェントは学習し速いですが、効果的ではありません。モデルは簡単で、確かに学習し速いですが、状態を不正確で過大評価します。複雑な環境を対応できないです。見える所は有限で、場所を学習していません。
+##### 　This model learns very fast but unpleasant. Due to its simpleness, the model just makes simple judgements(inaccurate and overestimate). It shows the agent has no sense of taking actions to respond to the complex environment. It has learn nothing about the environment although it just can see a little part of state and take them into Q-table.
+##### 　エージェントは学習し速いですが、効果的ではありません。モデルは簡単で、確かに学習し速いですが、状態を不正確で過大評価します。複雑な環境を対応できないです。見える所は有限で、状態をストレージしかなくて、学習していません。
 ##### 　Using CNN as input and DRL will get better result.
 ![image](https://github.com/ZHONGJunjie86/1-step-SARSA--Mario/blob/master/illustrate/experiment.JPG)
 
