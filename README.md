@@ -1,6 +1,8 @@
 # 1-step-SARSA--Mario
 　This is my first reinforcement learning work. I didn't use deep learning at that time, so it will shows how the traditional RL algorithm works.
  僕の初めての強化学習ワークでした。 当時は深層学習を使用していなかったため、従来のRLアルゴリズムがどのようにするかのは示されています。
+# Architecture
+https://github.com/ZHONGJunjie86/1-step-SARSA--Mario/blob/master/illustrate/architecture.JPG
 # SARSA(TD, on-policy)
 Q表をこのように更新する：　　
 Q(S,A) = Q(S,A) + α[reward + γQ(S’,A’) – Q(S,A)]　　
