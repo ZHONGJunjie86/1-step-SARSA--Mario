@@ -16,6 +16,10 @@
 　データ = マップの値 + 敵の値 = getReceptiveFieldCellValue(x,y) + getEnemiesCellValue(x,y)
 
 ![image](https://github.com/ZHONGJunjie86/1-step-SARSA--Mario/blob/master/illustrate/setting1.jpg)
+#### reward shaping
+reward = A*coins + B*win + C*kills - D*hurts -  E * die;
+*目的と設定によって、係数を変える.例えば、難しい場合には A を高くして、エージェントを右へ行かせます。
+*Change the coefficients depending on purposes and settings. For example, in difficult rounds it is supposed to make the A higher which can let the agent forward to right.
 # Experiment
 ##### 　This model learns very fast but unpleasant. Due to its simpleness, the model just makes simple judgements(inaccurate and overestimate). It shows the agent has no sense of taking actions to respond to the complex environment. It has learn nothing about the environment although it just can see a little part of state and take them into Q-table.
 ##### 　エージェントは学習し速いですが、効果的ではありません。モデルは簡単で、確かに学習し速いですが、状態を不正確で過大評価します。複雑な環境を対応できないです。見える所は有限で、状態をストレージしかなくて、学習していません。
