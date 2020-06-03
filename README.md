@@ -11,12 +11,13 @@
 　##### 実際に dead-road があるため、εは固定値になります。　　There are some dead roads so ε is assigned to be a consistent value.
 ![image](https://github.com/ZHONGJunjie86/1-step-SARSA--Mario/blob/master/illustrate/sarsa.jpg)
 # Setting
+### State Action
 　I pepared 9 actions for agent to choose and let agent see 8 blocks around itself.  And the data of each block is equal to map's data plus enemy's data. Imitating the CNN.  
 　九つの利用可能な行動を準備しておいて、緑の部分はエージェント自身見える所にします。動的なマップで、Q表が巨大化を防いで、もっと汎化のため、ただ八つの数値を取ります。CNNを模倣したいです。    
 　データ = マップの値 + 敵の値 = getReceptiveFieldCellValue(x,y) + getEnemiesCellValue(x,y)
 
 ![image](https://github.com/ZHONGJunjie86/1-step-SARSA--Mario/blob/master/illustrate/setting1.jpg)
-#### reward shaping
+### reward shaping
 reward = A*coins + B*win + C*kills - D*hurts -  E * die;
 *目的と設定によって、係数を変える.例えば、難しい場合には A を高くして、エージェントを右へ行かせます。
 *Change the coefficients depending on purposes and settings. For example, in difficult rounds it is supposed to make the A higher which can let the agent forward to right.
