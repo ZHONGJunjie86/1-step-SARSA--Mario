@@ -18,7 +18,7 @@
 
 ![image](https://github.com/ZHONGJunjie86/1-step-SARSA--Mario/blob/master/illustrate/setting1.jpg)
 ## reward shaping
-### reward = A*coins + B*win + C*kills - D*hurts -  E * die;  
+### reward = A * coins + B * win + C * kills - D * hurts -  E * die;  
 *目的と設定によって、係数を変える.例えば、難しい場合には A を高くして、エージェントを右へ行かせます。  
 *Change the coefficients depending on purposes and settings. For example, in difficult rounds it is supposed to make the A higher which can let the agent forward to right.
 # Experiment
