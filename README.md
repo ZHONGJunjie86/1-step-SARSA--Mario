@@ -8,7 +8,7 @@
 　Q(S,A) = Q(S,A) + α[reward + γQ(S’,A’) – Q(S,A)]　  　
 
 　ε-グリーディ：確率的に最優方策を選んで、ε = ε *(1+0.005)    
-### 実際に dead-road があるため、εは固定値になります。　　There are some dead roads so ε is assigned to be a consistent value.
+### (Noise on action) 実際に dead-road があるため、εは固定値になります。　　There are some dead roads so ε is assigned to be a consistent value.
 ![image](https://github.com/ZHONGJunjie86/1-step-SARSA--Mario/blob/master/illustrate/sarsa.jpg)
 # Setting
 ### State Action
